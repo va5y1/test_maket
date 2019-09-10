@@ -8,7 +8,9 @@ body {
 	font-family: 'Arial', sans-serif;
 	height: 100%;
 }
-
+#wrapper {
+	min-width: 1008px;
+}
 #inner {
 	padding: 25px 36px;
 	margin: 0 auto;
@@ -23,19 +25,16 @@ body {
 .header {
 	display: flex;
 	justify-content: space-between;
-
-	.logo {
-		margin-right: $gutter;
-	}
 	.contact {
 		background-color: $dgray;
-		flex-grow: 1;
-		margin-right: $gutter;
+		min-height: 108px;
+		min-width: 279px;
 	}
 	.more {
 		background-color: $dgray;
-		flex-grow: 2;
 		text-align: right;
+		min-height: 108px;
+		min-width: 513px;
 		p {
 			color: #fff;
 			padding: 0;
@@ -132,12 +131,12 @@ body {
 	color: #fff;
 	justify-content: space-between;
 	.foot-left {
-		flex-basis: 30%;
+		flex-basis: 297px;
 		background-color: $dgray;
 		column-count: 2;
 		padding: 18px 25px;
 		text-align: left;
-		margin-right: $gutter;
+		margin-right: 28px;
 		ul {
 			list-style: none;
 			margin: 0;
@@ -145,9 +144,9 @@ body {
 		}
 	}
 	.foot-center {
-		flex-basis: 30%;
+		flex-basis: 297px;
 		background-color: $dgray;
-		margin-right: $gutter;
+		margin-right: 28px;
 		padding: 18px 25px;
 		ul {
 			list-style-type: square;
@@ -156,20 +155,17 @@ body {
 		}
 	}
 	.foot-right {
-		flex-basis: 30%;
+		flex-basis: 308px;
 		display: flex;
 		justify-content: space-between;
 		flex-flow: column nowrap;
 		&__top {
-			flex-basis: 45%;
+			flex-basis: 50%;
 			background-color: $dgray;
+			margin-bottom: 28px;
 		}
 		&__bottom {
-			flex-basis: 45%;
+			flex-basis: 50%;
 		}
 	}
 }
-
-
- /* in the end*/
- @import "media";

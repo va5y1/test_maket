@@ -5,6 +5,9 @@ body {
   font-family: 'Arial', sans-serif;
   height: 100%; }
 
+#wrapper {
+  min-width: 1008px; }
+
 #inner {
   padding: 25px 36px;
   margin: 0 auto;
@@ -30,20 +33,15 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-  .header .logo {
-    margin-right: 15px; }
   .header .contact {
     background-color: #777777;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    margin-right: 15px; }
+    min-height: 108px;
+    min-width: 279px; }
   .header .more {
     background-color: #777777;
-    -webkit-box-flex: 2;
-        -ms-flex-positive: 2;
-            flex-grow: 2;
-    text-align: right; }
+    text-align: right;
+    min-height: 108px;
+    min-width: 513px; }
     .header .more p {
       color: #fff;
       padding: 0;
@@ -153,32 +151,32 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between; }
   .footer .foot-left {
-    -ms-flex-preferred-size: 30%;
-        flex-basis: 30%;
+    -ms-flex-preferred-size: 297px;
+        flex-basis: 297px;
     background-color: #777777;
     -webkit-column-count: 2;
        -moz-column-count: 2;
             column-count: 2;
     padding: 18px 25px;
     text-align: left;
-    margin-right: 15px; }
+    margin-right: 28px; }
     .footer .foot-left ul {
       list-style: none;
       margin: 0;
       padding: 0; }
   .footer .foot-center {
-    -ms-flex-preferred-size: 30%;
-        flex-basis: 30%;
+    -ms-flex-preferred-size: 297px;
+        flex-basis: 297px;
     background-color: #777777;
-    margin-right: 15px;
+    margin-right: 28px;
     padding: 18px 25px; }
     .footer .foot-center ul {
       list-style-type: square;
       margin: 0;
       padding: 0; }
   .footer .foot-right {
-    -ms-flex-preferred-size: 30%;
-        flex-basis: 30%;
+    -ms-flex-preferred-size: 308px;
+        flex-basis: 308px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -190,11 +188,10 @@ body {
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap; }
     .footer .foot-right__top {
-      -ms-flex-preferred-size: 45%;
-          flex-basis: 45%;
-      background-color: #777777; }
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+      background-color: #777777;
+      margin-bottom: 28px; }
     .footer .foot-right__bottom {
-      -ms-flex-preferred-size: 45%;
-          flex-basis: 45%; }
-
-/* in the end*/
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%; }
