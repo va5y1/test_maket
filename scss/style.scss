@@ -11,11 +11,9 @@ body {
 
 #wrapper {
 	padding: 25px 70px;
-}
-#inner {
+	margin: 0 auto;
 	width: 960px;
 	background-color: yellow;
-	margin: 0 auto;
 	height: 100%;
 }
 
@@ -63,7 +61,6 @@ body {
 	.left {
 		align-self: space-between;
 		flex-basis: 184px;
-		height: 100%;
 		display: flex;
 		flex-flow: column nowrap;
 		justify-content: space-between;
@@ -78,9 +75,8 @@ body {
 			padding: 19px 13px;
 			ul{
 				padding: 0;
-				li{
-					list-style: none;
-				}
+				margin: 0;
+				list-style: none;	
 			}
 		}
 	}
@@ -133,21 +129,26 @@ body {
 	color: #fff;
 	justify-content: space-between;
 	.foot-left {
-		flex-basis: 31%;
+		flex-basis: 30%;
 		background-color: $dgray;
+		column-count: 2;
+		padding: 18px 25px;
+		text-align: left;
 		ul {
 			list-style: none;
+			margin: 0;
+			padding: 0;
 		}
 	}
 	.foot-center {
-		flex-basis: 31%;
+		flex-basis: 30%;
 		background-color: $dgray;
 		ul {
 			list-style-type: square;
 		}
 	}
 	.foot-right {
-		flex-basis: 31%;
+		flex-basis: 30%;
 		display: flex;
 		justify-content: space-between;
 		flex-flow: column nowrap;
